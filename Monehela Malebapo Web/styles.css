@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: rgb(13, 95, 111);
+    padding: 15px 0;
+    text-align: center;
+    background-image:();
+}
+
+nav{
+    background-color: rgb(10, 99, 108);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    border: 4px;
+    
+}
+
+nav ul li {
+    
+    display: inline-block;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background: gray;
+    padding: 5px;
+    
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.45s;
+}
+a::after {
+    position:absolute;
+    inset: 0;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+}
+
+nav ul li a:hover {
+    background: black;
+
+}
+
+/* Flexbox Layout */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    border-color: coral;
+}
+
+.intro {
+    max-width: 500px;
+}
+
+.intro h2 {
+    font-size: 2em;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.home img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(13, 102, 127);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home img {
+        margin-top: 20px;
+    }
+}
+
+/* Projects Page Styling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* General Styles for Contact Form Section */
+#contact {
+    background: #f9f9f9;
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Heading */
+#contact h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-form .form-group {
+    width: 100%;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Input Fields on Focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: red;
+    outline: none;
+}
+
+/* Send Message Button */
+.send-btn {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.send-btn:hover {
+    background-color: darkred;
+}
+
+/* Responsive Design for Contact Form */
+@media screen and (max-width: 768px) {
+    #contact {
+        padding: 30px;
+    }
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9em;
+    }
+    .send-btn {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contact {
+        padding: 20px;
+    }
+    .send-btn {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
+
+
+/* Social Media Icon Styling */
+#social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 2em; /* Icon size */
+    color: #3b5998; /* Facebook Blue */
+    text-decoration: none;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+
+.social-icon i {
+    font-size: 1.5em;
+}
